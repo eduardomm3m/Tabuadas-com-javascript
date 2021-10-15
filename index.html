@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabuadas</title>
+
+    <link rel="stylesheet" href="estilos.css" >
+
+    <script src="tabuada.js" type="text/javascript"></script>
+</head>
+
+<body id="principal">
+    <header id="cabec">
+        <h1>TABUADA</h1>
+        <br>
+        <p><h4>Aqui você pode estudar e praticar a tabuada de qualquer número (de 1 até 10)...</h4></p>
+        <br>
+        <input type="hidden" id="idx">
+        <label for="numero">Escolha um número (de 1 até 10)</label>
+        <input type="number" name="numero" id="numero" autofocus />
+        <button onclick="iniciar()" id="inicio">Iniciar</button>
+        <br>
+        <a href="index.html" id="cancela">clique aqui para cancelar</a>
+        <br>
+        <br>
+    </header>
+
+    <div>
+        <table id="tabela">
+            <tr class="linhas">
+                <td class="numeros" id="num1"></td>
+                <td>*</td>
+                <td>1</td>
+                <td>=</td>
+                <td><input id="res1" class="inputs" type="text"></td>
+                <td><button id="botao1" class="botoes" onclick="validaResult()">OK</button></td>
+                <td id="msg1" class="msg"></td>
+            </tr>
+            <tr class="linhas">
+                <td class="numeros" id="num2"></td>
+                <td>*</td>
+                <td>2</td>
+                <td>=</td>
+                <td><input id="res2" class="inputs" type="text"></td>
+                <td><button id="botao2" class="botoes" onclick="validaResult()">OK</button></td>
+                <td id="msg2" class="msg"></td>
+            </tr>
+            <tr class="linhas">
+                <td class="numeros" id="num3"></td>
+                <td>*</td>
+                <td>3</td>
+                <td>=</td>
+                <td><input id="res3" class="inputs" type="text"></td>
+                <td><button id="botao3" class="botoes" onclick="validaResult()">OK</button></td>
+                <td id="msg3" class="msg"></td>
+            </tr>
+            <tr class="linhas">
+                <td class="numeros" id="num4"></td>
+                <td>*</td>
+                <td>4</td>
+                <td>=</td>
+                <td><input id="res4" class="inputs" type="text"></td>
+                <td><button id="botao4" class="botoes" onclick="validaResult()">OK</button></td>
+                <td id="msg4" class="msg"></td>
+            </tr>
+            <tr class="linhas">
+                <td class="numeros" id="num5"></td>
+                <td>*</td>
+                <td>5</td>
+                <td>=</td>
+                <td><input id="res5" class="inputs" type="text"></td>
+                <td><button id="botao5" class="botoes" onclick="validaResult()">OK</button></td>
+                <td id="msg5" class="msg"></td>
+            </tr>
+            <tr class="linhas">
+                <td class="numeros" id="num6"></td>
+                <td>*</td>
+                <td>6</td>
+                <td>=</td>
+                <td><input id="res6" class="inputs" type="text"></td>
+                <td><button id="botao6" class="botoes" onclick="validaResult()">OK</button></td>
+                <td id="msg6" class="msg"></td>
+            </tr>
+            <tr class="linhas">
+                <td class="numeros" id="num7"></td>
+                <td>*</td>
+                <td>7</td>
+                <td>=</td>
+                <td><input id="res7" class="inputs" type="text"></td>
+                <td><button id="botao7" class="botoes" onclick="validaResult()">OK</button></td>
+                <td id="msg7" class="msg"></td>
+            </tr>
+            <tr class="linhas">
+                <td class="numeros" id="num8"></td>
+                <td>*</td>
+                <td>8</td>
+                <td>=</td>
+                <td><input id="res8" class="inputs" type="text"></td>
+                <td><button id="botao8" class="botoes" onclick="validaResult()">OK</button></td>
+                <td id="msg8" class="msg"></td>
+            </tr>
+            <tr class="linhas">
+                <td class="numeros" id="num9"></td>
+                <td>*</td>
+                <td>9</td>
+                <td>=</td>
+                <td><input id="res9" class="inputs" type="text"></td>
+                <td><button id="botao9" class="botoes" onclick="validaResult()">OK</button></td>
+                <td id="msg9" class="msg"></td>
+            </tr>
+            <tr class="linhas">
+                <td class="numeros" id="num10"></td>
+                <td>*</td>
+                <td>10</td>
+                <td>=</td>
+                <td><input id="res10" class="inputs" type="text"></td>
+                <td><button id="botao10" class="botoes" onclick="validaResult()">OK</button></td>
+                <td id="msg10" class="msg"></td>
+            </tr>
+        </table>
+        <br>
+    </div>
+
+    <footer id="rodape"><h2><a href="index.html">PARABÉNS !!! ...clique aqui para iniciar de novo</a></h2></footer>
+
+</body>
+
+</html>
